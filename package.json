@@ -1,0 +1,29 @@
+{
+  "name": "eth-btc-bnb-transfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethereumjs/tx": "^3.4.0",
+    "axios": "^0.24.0",
+    "bitcoinjs-lib": "^6.0.1",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "ecpair": "^2.0.1",
+    "express": "^4.17.1",
+    "express-validation": "^3.0.8",
+    "js-sha3": "^0.8.0",
+    "keythereum": "^1.2.0",
+    "log4js": "^6.3.0",
+    "mongoose": "^6.0.15",
+    "nodemon": "^2.0.15",
+    "rpc-bitcoin": "^2.0.0",
+    "tiny-secp256k1": "^2.1.2",
+    "web3": "^1.6.1"
+  }
+}

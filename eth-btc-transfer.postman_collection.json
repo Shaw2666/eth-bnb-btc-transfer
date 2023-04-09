@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "d7b80726-449d-44ca-90ab-94f664dfcec4",
+		"name": "ETH-BTC-TRANSFER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create ETH Admin Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/createAccount/eth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"createAccount",
+						"eth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create BNB Admin Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/createAccount/bnb",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"createAccount",
+						"bnb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create BTC Admin Account",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/api/v1/createAccount/btc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"createAccount",
+						"btc"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Ether",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":0.01,\r\n    \"address\":\"0x1D0a9BCD31fEE726726d5Fa3f9971Bd2e38215d0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/transfer/eth",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"transfer",
+						"eth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer BNB",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":0.001,\r\n    \"address\":\"0x1D0a9BCD31fEE726726d5Fa3f9971Bd2e38215d0\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/transfer/bnb",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"transfer",
+						"bnb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Transfer Bitcoin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount\":0.001,\r\n    \"address\":\"tb1qwxr2d5v5kn40765ktm40au3pehghst9gf56mh8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/v1/transfer/btc",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"transfer",
+						"btc"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "localhost:4000"
+		}
+	]
+}
