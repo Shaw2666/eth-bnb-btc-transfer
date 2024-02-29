@@ -1,0 +1,1 @@
+{ "e": "do_withdrawal_funds_to_wallet", "oid": "bc1qkfxpf5t3hzhp4h2qv5n8q8qu4msyu7930hlpjy_withdraw_to_wallet", "data": { "amount": 0.001, "currency": "BTC", "accountId": "testAccount1", "clientTxId": "tx-withdrawToWallet-test-bc1qqty6lwayeka42vh6nmc24wepufgnnhvu8765n3" } }
